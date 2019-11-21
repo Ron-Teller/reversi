@@ -10,7 +10,10 @@ Reversi game coded in java with MVC architecture (design pattern), features LAN 
   * [Neural Network](#neural-network)
     + [Layers](#neural-network-layers)  
     + [Illustration](#neural-network-illustration)
-<br /><br />
+
+
+1. First ordered list item
+2. Another item
 
 <br /><br />
 <a name="neural-network-illustration"></a>
@@ -47,29 +50,37 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 
 <a name="launch_game_window"></a>
 <h3>Launch Window</h3>
+
 ![launch_game_window](/readme/launch_game_window.png)
 <br /><br />
+
 1.	A game of reversi is played on the same pc, 2 players use the same pc (or a single player against himself).
 2.	Play against AI.
 3.	Play against another peer on the LAN network.
 
 <a name="game_window"></a>
 <h3>Game Window</h3>
+
 ![game_window](/readme/game_window.png)
 <br /><br />
+
 1.	Black player points
 2.	White player points
 3.	Current moving player color
 4.	Toggle switch to show possible moves for current moving player
+
 <a name="show_move"></a>
 ![show_move](/readme/show_move.png)
-<br /><br />
+<br />
+
 5. Sound toggle
 6. Game status
 7. Reversi board
+
 <a name="reversi_board"></a>
 ![reversi_board](/readme/reversi_board.png)
-<br /><br />
+<br />
+
 * Outlines in green an empty square that current player may occupy when mouse hovers over it.
 * Outlines in blue all of the opponents pieces he will capture if he moves a piece on square outlined in green.
 8. Move Me - AI moves for you
@@ -80,22 +91,29 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 
 <a name="playing_vs_ai"></a>
 <h3>Playing Vs AI</h3>
+
 ![ai_ui](/readme/ai_ui.png)
-<br /><br />
+<br />
+
 1. First Move - Choose who starts first - human or ai
 2. Difficulty level
 3. Play - Launch a new game against ai
 
 <a name="playing_on_network"></a>
 <h3>Playing On Network</h3>
+
 ![playing_on_network](/readme/playing_on_network.png)
-<br /><br />
+<br />
+
 1. Hosting peer enables server
+
 <a name="enable_server"></a>
 ![enable_server](/readme/enable_server.png)
-<br /><br />
+<br />
+
 2.	Hosting peer is supplied with address of server that client peers may connect to.
 3.	Client peer inputs server address and requests to join
+
 <a name="client_join"></a>
 ![client_join](/readme/client_join.png)
 <br /><br />
@@ -104,6 +122,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 <h3>Client Game Request</h3>
 ![client_game_request](/readme/client_game_request.png)
 <br /><br />
+
 1.	Server address
 2.	Connection attempt status
 3.	Game request accepted status
@@ -113,8 +132,10 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 
 <a name="incoming_game_request"></a>
 <h3>Incoming Game Request</h3>
+
 ![incoming_game_request](/readme/incoming_game_request.png)
-<br /><br />
+<br />
+
 1.	Address of connecting client
 2.	Accept game request
 3.	Decline game request
@@ -133,10 +154,14 @@ The heuristic function simply counts how many points are occupied by the player 
 <h1>Network</h1>
 The network architecture used for this project was client-server. Any 2 clients on the same LAN network can play against each other, given one peers knows the other peers ip and port used by the reversi program.
 <br />
+
 The project offers 2 main network features:
+<br />
+
 1.	Allows 2 peers to play against each other on the same LAN network
 2.	Chat with each other after they have started a game using a chat box located at the bottom of the game board.
 <br /><br />
+
 ![network_ui](/readme/network_ui.png)
 <br /><br />
 
@@ -145,22 +170,31 @@ The project offers 2 main network features:
 1.	Both peers need to have the reverse program installed.
 2.	Both peers need to be on the same LAN network
 3.	One of the peers opens a server on their pc by checking “Enable connections” which waits for incoming peer requests. An ip and port is supplied, and any client that wishes to request a game must know this address.
+
 <a name="server_enable"></a>
 ![server_enable](/readme/server_enable.png)
-<br /><br />
+<br />
+
 4.	The server hosting peer must communicate his server address to any other peer that wants to play with him.
+
 <a name="server_address"></a>
 ![server_address](/readme/server_address.png)
-<br /><br />
+<br />
+
 5.	The client peer supplies the address of the server and clicks “Join”.
+
 <a name="client_join"></a>
 ![client_join](/readme/client_join.png)
-<br /><br />
+<br />
+
 6.	The client waits for the server peer to accept the game request.
+
 <a name="client_game_request"></a>
 ![client_game_request](/readme/client_game_request.png)
-<br /><br />
+<br />
+
 7.	The peer hosting the server will receive a game request. He can choose to accept or decline.
+
 <a name="server_game_request"></a>
 ![server_game_request](/readme/server_game_request.png)
 <br /><br />
@@ -180,22 +214,30 @@ After game has initiated
 <a name="client_game_request"></a>
 <h3>Client Game Request</h3>
 1.	Server address validation.
+
 <a name="validation_server"></a>
 ![validation_server](/readme/validation_server.png)
-<br /><br />
+<br />
+
 2.	Attempt to connect to server
+
 <a name="join_server_attempt"></a>
 ![join_server_attempt](/readme/join_server_attempt.png)
-<br /><br />
+<br />
+
 3.	After successful connection, wait for hosting peer to accept
+
 <a name="wait_peer_accept"></a>
 ![wait_peer_accept](/readme/wait_peer_accept.png)
-<br /><br />
+<br />
+
 In case of failure to connect to server
+
 <a name="server_connection_failure"></a>
 ![server_connection_failure](/readme/server_connection_failure.png)
-<br /><br />
+<br />
 4.	Initialize Game
+
 <a name="game_initialize"></a>
 ![game_initialize](/readme/game_initialize.png)
 <br /><br />
