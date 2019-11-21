@@ -17,6 +17,7 @@ Reversi game coded in java with MVC architecture (design pattern), features LAN 
   * [Hosting a server](#hosting_a_server)
   * [Joining a server](#joining_a_server)
   
+<br />
 
 <a name="architecture"></a>
 <h1>Architecture</h1>
@@ -89,7 +90,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 11. Send message to peer
 12. Chat box
 
-<br /><br />
+<br />
 <a name="playing_vs_ai"></a>
 <h3>Playing Vs AI</h3>
 
@@ -100,7 +101,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 2. Difficulty level
 3. Play - Launch a new game against ai
 
-<br /><br />
+<br />
 <a name="playing_on_network"></a>
 <h3>Playing On Network</h3>
 
@@ -120,7 +121,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 ![client_join](/readme/client_join.png)
 <br /><br />
 
-<br /><br />
+<br />
 <a name="client_game_request"></a>
 <h3>Client Game Request</h3>
 
@@ -134,7 +135,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 5.	Game request status
 6.	Cancel game request
 
-<br /><br />
+<br />
 <a name="incoming_game_request"></a>
 <h3>Incoming Game Request</h3>
 
@@ -146,7 +147,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 3.	Decline game request
 
 
-
+<br />
 <a name="ai"></a>
 <h1>Artificial Intelligence</h1>
 The artificial intelligence used in this project is minimax. The user can choose how many steps ahead the algorithm looks forward by choosing the difficulty level (1-5) accordingly. The reason there is not an option for a level 6 difficulty is because looking 6 moves forward in the algorithm proved to be a lengthy wait, many times more than 15 seconds. 
@@ -154,7 +155,7 @@ The artificial intelligence used in this project is minimax. The user can choose
 The heuristic function simply counts how many points are occupied by the player on the board.
 
 
-
+<br />
 <a name="network"></a>
 <h1>Network</h1>
 The network architecture used for this project was client-server. Any 2 clients on the same LAN network can play against each other, given one peers knows the other peers ip and port used by the reversi program.
@@ -170,7 +171,7 @@ The project offers 2 main network features:
 ![network_ui](/readme/network_ui.png)
 <br /><br />
 
-<br /><br />
+<br />
 <a name="network_gaming_protocol"></a>
 <h3>Network Gaming Protocol</h3>
 
@@ -213,7 +214,7 @@ After game has initiated
 *	In the end of the game they can choose a rematch.
 *	If one of the peers disconnects, the other peer is notified.
 
-<br /><br />
+<br />
 <a name="hosting_a_server"></a>
 <h3>Hosting a server</h3>
 
@@ -221,7 +222,7 @@ After game has initiated
 2.	The hosting peer may disable or enable his server at any time.
 3.	An incoming game request contains the peer client’s address. The hosting peer may choose to accept or decline the game request.
 
-<br /><br />
+<br />
 <a name="joining_a_server"></a>
 <h3>Joining A Server</h3>
 
