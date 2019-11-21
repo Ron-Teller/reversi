@@ -206,10 +206,11 @@ The project offers 2 main network features:
 <br /><br />
 
 After game has initiated
-•	Both players can send chat messages to each other.
-•	Both players choose their move on their turn.
-•	In the end of the game they can choose a rematch.
-•	If one of the peers disconnects, the other peer is notified.
+
+*	Both players can send chat messages to each other.
+*	Both players choose their move on their turn.
+*	In the end of the game they can choose a rematch.
+*	If one of the peers disconnects, the other peer is notified.
 
 <br /><br />
 <a name="hosting_server"></a>
