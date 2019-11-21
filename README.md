@@ -16,13 +16,7 @@ Reversi game coded in java with MVC architecture (design pattern), features LAN 
   * [Network gaming protocol](#network_gaming_protocol)
   * [Hosting a server](#hosting_a_server)
   * [Joining a server](#joining_a_server)
-
-
-
-<br /><br />
-<a name="neural-network-illustration"></a>
-![neural_network_illustration](neuralnet_layers.png)
-<br /><br />
+  
 
 <a name="architecture"></a>
 <h1>Architecture</h1>
