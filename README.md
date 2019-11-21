@@ -2,14 +2,21 @@
 Reversi game coded in java with MVC architecture (design pattern), features LAN client-server multiplayer between 2 players with instant chat and gaming vs AI using minimax on several difficulty levels.
 
 - [Architecture](#architecture)
+  * [Model](#model)
+  * [Controller](#controller)
+  * [View](#view)
+    + [Launch window](#launch_window)
+    + [Game window](#game_window)
+    + [Playing vs AI](#playing_vs_ai)
+    + [Playing on network](#playing_on_network)
+    + [Client game request](#client_game_request)
+    + [Incoming game request](#incoming_game_request)    
 - [AI](#ai)
 - [Network](#network)
+  * [Network gaming protocol](#network_gaming_protocol)
+  * [Hosting a server](#hosting_a_server)
+  * [Joining a server](#joining_a_server)
 
-
-
-  * [Neural Network](#neural-network)
-    + [Layers](#neural-network-layers)  
-    + [Illustration](#neural-network-illustration)
 
 
 <br /><br />
@@ -213,7 +220,7 @@ After game has initiated
 *	If one of the peers disconnects, the other peer is notified.
 
 <br /><br />
-<a name="hosting_server"></a>
+<a name="hosting_a_server"></a>
 <h3>Hosting a server</h3>
 
 1.	A peer hosts a server that listens for incoming game requests from peer clients
@@ -221,8 +228,8 @@ After game has initiated
 3.	An incoming game request contains the peer client’s address. The hosting peer may choose to accept or decline the game request.
 
 <br /><br />
-<a name="client_game_request"></a>
-<h3>Client Game Request</h3>
+<a name="joining_a_server"></a>
+<h3>Joining A Server</h3>
 
 1.	Server address validation.
 
