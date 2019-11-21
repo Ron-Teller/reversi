@@ -47,7 +47,7 @@ The controller mainly waits for updates from the view (GUI) to make changes to t
 <h2>View</h2>
 The GUI for this project was developed separately using NetBeans SWING UI. Hence, the need for use of the adapter design pattern, since the interface for the actual GUI code (view) was not available for reference when coding controller and model related code.
 
-<br /><br />
+<br />
 <a name="launch_game_window"></a>
 <h3>Launch Window</h3>
 
@@ -58,7 +58,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 2.	Play against AI.
 3.	Play against another peer on the LAN network.
 
-<br /><br />
+<br />
 <a name="game_window"></a>
 <h3>Game Window</h3>
 
