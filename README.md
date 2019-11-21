@@ -48,7 +48,7 @@ The controller mainly waits for updates from the view (GUI) to make changes to t
 The GUI for this project was developed separately using NetBeans SWING UI. Hence, the need for use of the adapter design pattern, since the interface for the actual GUI code (view) was not available for reference when coding controller and model related code.
 
 <br />
-<a name="launch_game_window"></a>
+<a name="launch_window"></a>
 <h3>Launch Window</h3>
 
 ![launch_game_window](/readme/launch_game_window.png)
