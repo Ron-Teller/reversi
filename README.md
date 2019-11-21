@@ -12,9 +12,6 @@ Reversi game coded in java with MVC architecture (design pattern), features LAN 
     + [Illustration](#neural-network-illustration)
 
 
-1. First ordered list item
-2. Another item
-
 <br /><br />
 <a name="neural-network-illustration"></a>
 ![neural_network_illustration](neuralnet_layers.png)
@@ -48,6 +45,7 @@ The controller mainly waits for updates from the view (GUI) to make changes to t
 <h2>View</h2>
 The GUI for this project was developed separately using NetBeans SWING UI. Hence, the need for use of the adapter design pattern, since the interface for the actual GUI code (view) was not available for reference when coding controller and model related code.
 
+<br /><br />
 <a name="launch_game_window"></a>
 <h3>Launch Window</h3>
 
@@ -58,6 +56,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 2.	Play against AI.
 3.	Play against another peer on the LAN network.
 
+<br /><br />
 <a name="game_window"></a>
 <h3>Game Window</h3>
 
@@ -89,6 +88,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 11. Send message to peer
 12. Chat box
 
+<br /><br />
 <a name="playing_vs_ai"></a>
 <h3>Playing Vs AI</h3>
 
@@ -99,10 +99,11 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 2. Difficulty level
 3. Play - Launch a new game against ai
 
+<br /><br />
 <a name="playing_on_network"></a>
 <h3>Playing On Network</h3>
 
-![playing_on_network](/readme/playing_on_network.png)
+![lan_ui](/readme/lan_ui.png)
 <br />
 
 1. Hosting peer enables server
@@ -118,8 +119,10 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 ![client_join](/readme/client_join.png)
 <br /><br />
 
+<br /><br />
 <a name="client_game_request"></a>
 <h3>Client Game Request</h3>
+
 ![client_game_request](/readme/client_game_request.png)
 <br /><br />
 
@@ -130,10 +133,11 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 5.	Game request status
 6.	Cancel game request
 
+<br /><br />
 <a name="incoming_game_request"></a>
 <h3>Incoming Game Request</h3>
 
-![incoming_game_request](/readme/incoming_game_request.png)
+![incoming_game_request](/readme/server_game_request.png)
 <br />
 
 1.	Address of connecting client
@@ -165,8 +169,10 @@ The project offers 2 main network features:
 ![network_ui](/readme/network_ui.png)
 <br /><br />
 
+<br /><br />
 <a name="network_gaming_protocol"></a>
 <h3>Network Gaming Protocol</h3>
+
 1.	Both peers need to have the reverse program installed.
 2.	Both peers need to be on the same LAN network
 3.	One of the peers opens a server on their pc by checking “Enable connections” which waits for incoming peer requests. An ip and port is supplied, and any client that wishes to request a game must know this address.
@@ -205,14 +211,18 @@ After game has initiated
 •	In the end of the game they can choose a rematch.
 •	If one of the peers disconnects, the other peer is notified.
 
+<br /><br />
 <a name="hosting_server"></a>
 <h3>Hosting a server</h3>
+
 1.	A peer hosts a server that listens for incoming game requests from peer clients
 2.	The hosting peer may disable or enable his server at any time.
 3.	An incoming game request contains the peer client’s address. The hosting peer may choose to accept or decline the game request.
 
+<br /><br />
 <a name="client_game_request"></a>
 <h3>Client Game Request</h3>
+
 1.	Server address validation.
 
 <a name="validation_server"></a>
@@ -227,8 +237,8 @@ After game has initiated
 
 3.	After successful connection, wait for hosting peer to accept
 
-<a name="wait_peer_accept"></a>
-![wait_peer_accept](/readme/wait_peer_accept.png)
+<a name="wait_peer_attempt"></a>
+![wait_peer_attempt](/readme/wait_peer_attempt.png)
 <br />
 
 In case of failure to connect to server
