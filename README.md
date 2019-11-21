@@ -92,7 +92,7 @@ The GUI for this project was developed separately using NetBeans SWING UI. Hence
 <a name="playing_vs_ai"></a>
 <h3>Playing Vs AI</h3>
 
-![ai_ui](/readme/ai_ui.png)
+![ai_interface](/readme/ai_interface.png)
 <br />
 
 1. First Move - Choose who starts first - human or ai
@@ -236,6 +236,7 @@ In case of failure to connect to server
 <a name="server_connection_failure"></a>
 ![server_connection_failure](/readme/server_connection_failure.png)
 <br />
+
 4.	Initialize Game
 
 <a name="game_initialize"></a>
